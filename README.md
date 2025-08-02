@@ -23,16 +23,29 @@ Sayali More
 
 ## 📁 Project Structure (MVC)
 ```
-src
-└── main
-├── java
-│ └── com.store.udhari
-│ ├── controller # REST APIs
-│ ├── entity # JPA Entities (Customer, Udhari, Bill)
-│ ├── repository # Spring Data JPA Repositories
-│ └── service # Business Logic
-└── resources
-├── application.properties
+src/main/java/
+└── com.store.udhari
+    ├── UdahriBillingApplication.java         # Main Spring Boot Application Class
+
+    ├── controller/                           # REST Controllers for API Endpoints
+    │   ├── CustomerController.java
+    │   ├── RepaymentController.java
+    │   ├── SummaryController.java
+    │   └── UdhariController.java
+
+    ├── dto/                                  # Data Transfer Objects (DTOs)
+    │   └── CustomerSummary.java
+
+    ├── model/                                # Entity Classes (JPA Models)
+    │   ├── Customer.java
+    │   ├── Repayment.java
+    │   └── Udhari.java
+
+    └── repository/                           # Repository Interfaces (Spring Data JPA)
+        ├── CustomerRepository.java
+        ├── RepaymentRepository.java
+        └── UdhariRepository.java
+
 ```
 
 ---
