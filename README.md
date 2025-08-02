@@ -1,1 +1,1 @@
-# GeneralStoreRest-API
+# GeneralStore

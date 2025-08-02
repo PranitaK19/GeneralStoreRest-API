@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="mr">
+<head>
+    <meta charset="UTF-8">
+    <title>Marathi General Store - उधारी बिलिंग</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>🛒 मराठी जनरल स्टोअर - उधारी बिलिंग सिस्टम</h1>
+
+    <!-- ग्राहक जोडा -->
+    <section>
+        <h2>➕ नवीन ग्राहक जोडा</h2>
+        <form id="addCustomerForm">
+            <input type="text" id="name" placeholder="ग्राहकाचे नाव" required>
+            <input type="text" id="mobile" placeholder="मोबाईल नंबर" required>
+            <button type="submit">जतन करा</button>
+        </form>
+    </section>
+
+    <!-- उधारी नोंदवा -->
+    <section>
+        <h2>📦 उधारी नोंदवा</h2>
+        <form id="addUdhariForm">
+            <input type="text" id="udhariName" placeholder="ग्राहकाचे नाव" required>
+            <input type="text" id="itemName" placeholder="वस्तूचे नाव" required>
+            <input type="number" id="amount" placeholder="रक्कम ₹" required>
+            <button type="submit">उधारी जतन करा</button>
+        </form>
+    </section>
+
+    <!-- फेड नोंदवा -->
+    <section>
+        <h2>💰 फेड नोंदवा</h2>
+        <form id="repaymentForm">
+            <input type="text" id="repaymentName" placeholder="ग्राहकाचे नाव" required>
+            <input type="number" id="repaymentAmount" placeholder="फेड रक्कम ₹" required>
+            <button type="submit">फेड जतन करा</button>
+        </form>
+    </section>
+
+    <!-- शिल्लक पहा -->
+    <section>
+        <h2>📋 शिल्लक रक्कम पाहा</h2>
+        <form id="checkBalanceForm">
+            <input type="text" id="balanceName" placeholder="ग्राहकाचे नाव" required>
+            <button type="submit">शिल्लक पहा</button>
+        </form>
+        <div id="balanceResult"></div>
+    </section>
+
+    <!-- सर्व उधारी ग्राहक -->
+    <section>
+        <h2>📋 सर्व उधारी ग्राहक</h2>
+        <button onclick="loadUdhariCustomers()">🔍 यादी पहा</button>
+        <ul id="udhariCustomerList"></ul>
+    </section>
+
+    <!-- JS जोडत आहे -->
+    <script src="script.js"></script>
+</body>
+</html>
