@@ -2,12 +2,6 @@
 
 A simple and beginner-friendly RESTful backend application for managing customer credit (उधारी) records at a local general store. This project is built using **Spring Boot**, **PostgreSQL**, and follows the **MVC architecture**.
 
----
-## 🤝 Group Members
-
-Pranita Khendkar  
-Sayali More
-
 ----
 ## 📸 Dairect Link To see Project: https://marathi-billing.surge.sh
 ----
@@ -72,7 +66,7 @@ cd marathi-udhari-billing
 ```
 
 2. Set up your PostgreSQL database:
-   - Create a database: `gsbilling`
+   - Create a database: `udhari_billing`
    - Update `application.properties` with your credentials
 
 3. Run the Spring Boot Application:
@@ -89,12 +83,12 @@ cd marathi-udhari-billing
 
 2. Run the Python HTTP server:
 ```bash
-python -m http.server 3000
+python -m http.server 8000
 ```
 
 3. Open your browser and go to:
 ```
-http://localhost:3000
+http://localhost:8000
 ```
 
 > 🔗 Make sure the backend Spring Boot server is running on `http://localhost:8080` and frontend on `http://localhost:3000`
@@ -121,11 +115,9 @@ http://localhost:3000
 
 Name:-  
 **Pranita Khendkar**  
-**Sayali More**
 
 Email:-    
 khendkarpranita@gmail.com   
-sayalimore0007@gmail.com
 
 Github:-  
 https://github.com/PranitaK19
